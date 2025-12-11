@@ -105,4 +105,12 @@ describe("Перевірка дня тижня", () => {
     test(" day 8 should be null ", () => {
         expect(weekFn(8)).toBe(null)
     })
+
+    test(" day '2' should be null ", () => {
+        expect(weekFn('2')).toBe(null)
+    })
+
+    test(" day 1.5 should be null ", () => {
+        expect(weekFn(1.5)).toBe(null)
+    })
 })
